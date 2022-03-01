@@ -50,6 +50,12 @@ $ export AWS_SECRET_ACCESS_KEY=YOUR_SECRET_KEY
 4. `$ terraform plan` - Creates an execution plan, which lets you preview the changes that Terraform plans to make to the infrastructure.
 5. `$ terraform apply` - Creates the infrastructure.
 
-#### Check the terraform output
+##### Check the terraform output
 
 `$ curl $(terraform output -raw lb_url)`
+
+#### IV.Destroy configuration
+
+**Note**: If the [application](https://github.com/krasteki/terraform-data-sources-app.git) workspace is deployed You must destroy it before remove the resources in the [`network infrastructure`](https://github.com/krasteki/terraform-data-sources-vpc.git). `terraform_remote_state` data source share data between the two workspaces and they need to be destroyed by the last created order.
+
+`$ terraform destroy`
