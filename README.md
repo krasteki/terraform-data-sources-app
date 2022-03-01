@@ -29,8 +29,8 @@ data source used:
 #### I. Clone the repo
 
 ```
-$ git clone https://github.com/krasteki/terraform-data-sources-vpc.git
-$ cd terraform-data-sources-vpc
+$ git clone https://github.com/krasteki/terraform-data-sources-app.git
+$ cd terraform-data-sources-app
 ```
 
 #### II. Authenticate to AWS
